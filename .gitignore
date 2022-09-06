@@ -1,0 +1,5 @@
+# do not commit virtual environment
+venv/
+
+# for jetbrains IDE
+.idea/
