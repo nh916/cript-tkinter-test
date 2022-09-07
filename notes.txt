@@ -1,0 +1,1 @@
+possibly make a function that makes all labels to not repeat code
