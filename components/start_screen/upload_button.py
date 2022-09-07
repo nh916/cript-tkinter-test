@@ -1,12 +1,13 @@
 # python package
 import tkinter
 
-
 # my modules
+from screens.loading import loading_screen
 
 
 def upload_to_cript():
     print("uploading to cript :)")
+    loading_screen()
 
 
 # upload button

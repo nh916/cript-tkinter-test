@@ -2,7 +2,6 @@
 import tkinter
 
 # my modules
-# from components.start_screen.host import setup_host
 from components.start_screen import host, api_token, project_name, collection_name, path_to_excel, data_privacy, upload_button
 
 # create window object
