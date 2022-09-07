@@ -13,13 +13,14 @@ root.geometry("700x700")
 root.title("CRIPT Excel Uploader")
 
 # fields
-host.ask_for_host(root)
-api_token.ask_for_api_token(root)
-project_name.ask_for_project_name(root)
-collection_name.ask_for_collection_name(root)
-path_to_excel.ask_for_excel_path(root)
-data_privacy.ask_for_data_privacy_option(root)
-upload_button.button(root)
+host.host(root)
+api_token.api_token(root)
+project_name.project_name(root)
+collection_name.collection_name(root)
+path_to_excel.excel_path(root)
+data_privacy.data_privacy_option(root)
+
+upload_button.upload_button(root)
 
 # start program
 root.mainloop()

@@ -1,11 +1,16 @@
 # python package
 import tkinter
 
+
 # my modules
-from defaults import default_font, default_font_size
+
+
+def upload_to_cript():
+    print("uploading to cript :)")
 
 
 # upload button
-def button(root):
-    upload_button = tkinter.Button(root, text="Upload Excel File", fg="white", bg="green")
-    upload_button.grid(row=6, column=0)
+def upload_button(root):
+    upload_button_tk = tkinter.Button(root, text="Upload Excel File", fg="white", bg="green", command=upload_to_cript)
+
+    upload_button_tk.grid(row=6, column=0)
