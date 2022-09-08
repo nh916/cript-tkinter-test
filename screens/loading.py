@@ -7,9 +7,11 @@ from defaults import default_font, default_font_size
 
 class LoadingScreen:
     def __init__(self, root):
-        # main window (root) and loading frame
-        self.root = root
-        self.frame = tkinter.Frame(root, background="red", height=700, width=700)
+        self.app_window = root
+
+        self.root = root.root
+
+        self.frame = tkinter.Frame(self.root, background="red", height=700, width=700)
 
         # variables needed for loading frame
         self.cancel_button = None

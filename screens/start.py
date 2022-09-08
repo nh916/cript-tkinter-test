@@ -9,10 +9,12 @@ from defaults import default_font, default_font_size
 class StartScreen:
 
     def __init__(self, root):
-        self.root = root
+        self.app_window = root
+
+        self.root = root.root
 
         # TODO style this better and change ratios
-        self.frame = tkinter.Frame(root, background="green", height=700, width=700)
+        self.frame = tkinter.Frame(self.root, background="green", height=700, width=700)
 
         # components needed for start screen
         self.host_entry = None
@@ -142,6 +144,7 @@ class StartScreen:
         # TODO once button is clicked hand over dict from GUI to Excel Uploader
 
         # TODO wipe away the start screen upon hitting "Upload" button
+        self.app_window.navigate_from_start_to_loading()
 
     # upload button
     def upload_button(self):
