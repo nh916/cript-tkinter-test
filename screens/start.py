@@ -1,11 +1,8 @@
 # python package
 import tkinter
-
 # my modules
 from tkinter import filedialog
 
-from components.start_screen import host, api_token, project_name, collection_name, path_to_excel, data_privacy, \
-    upload_button
 from defaults import default_font, default_font_size
 
 
