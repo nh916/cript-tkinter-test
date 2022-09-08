@@ -130,8 +130,7 @@ class StartScreen:
 
     # handles what happens when upload button is clicked
     def _upload_button_handler(self):
-        print("uploading to cript :)")
-
+        # creates a dict from inputs on start screen
         self.CRIPT_connection_dict = {
             "host": self.host_entry.get(),
             "token": self.api_token_entry.get(),
@@ -139,6 +138,8 @@ class StartScreen:
             "collection": self.collection_entry.get(),
             "public": self.public_private_option.get(),
         }
+
+        # TODO once button is clicked hand over dict from GUI to Excel Uploader
 
         # wipe away the start screen upon hitting "Upload" button
         self.frame.destroy()
