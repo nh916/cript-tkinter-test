@@ -1,8 +1,8 @@
 # python package
 import tkinter
-# my modules
 from tkinter import filedialog
 
+# my modules
 from defaults import default_font, default_font_size
 
 
@@ -11,6 +11,7 @@ class StartScreen:
     def __init__(self, root):
         # main window (root) and start_screen frame
         self.root = root
+        # TODO style this better and change ratios
         self.frame = tkinter.Frame(root, background="green", height=700, width=700)
 
         # components needed for start screen
@@ -138,8 +139,6 @@ class StartScreen:
             "collection": self.collection_entry.get(),
             "public": self.public_private_option.get(),
         }
-
-        print(self.CRIPT_connection_dict)
 
         # wipe away the start screen upon hitting "Upload" button
         self.frame.destroy()

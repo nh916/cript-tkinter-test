@@ -5,22 +5,28 @@ import tkinter
 from defaults import default_font, default_font_size
 
 
-def loading_screen():
-    # create window object
-    root = tkinter.Tk()
+class LoadingScreen:
+    def __init__(self, root):
+        # main window (root) and loading frame
+        self.root = root
+        self.frame = tkinter.Frame(root, background="red", height=700, width=700)
 
-    # setting up tkinter window
-    root.geometry("700x700")
-    root.title("CRIPT Excel Uploader")
+        # variables needed for loading frame
+        self.cancel_button = None
 
-    # test
-    host_label = tkinter.Label(root, text="host:", font=(default_font, default_font_size),
-                               justify="left")
-    host_label.grid(row=0, column=0)
+    # TODO these need _component or something to tell them apart
+    def loading_bar(self):
+        # show loading bar and picture
+        pass
 
-    # input
-    host_entry = tkinter.Entry(root, width=50)
-    host_entry.grid(row=0, column=1)
+    def _cancel_upload_button_handler(self):
+        # stop the uploading program
+        pass
 
-    # start program
-    root.mainloop()
+    def cancel_upload_button(self):
+        self.cancel_button = tkinter.Button(self.frame, text="Cancel Upload")
+        self.cancel_button.grid(row=1, column=1)
+
+    def get_loading_screen(self):
+        self.cancel_upload_button()
+        return self.frame
