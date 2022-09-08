@@ -1,1 +1,13 @@
 possibly make a function that makes all labels to not repeat code
+
+refactore to change root to frame in all components
+
+structure
+    main
+        shared code for screens and components
+
+    screens/
+        frames
+            components get used here
+
+    components/

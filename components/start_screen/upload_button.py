@@ -5,13 +5,14 @@ import tkinter
 from screens.loading import loading_screen
 
 
-def upload_to_cript():
+def upload_to_cript(frame):
     print("uploading to cript :)")
-    loading_screen()
+    frame.pack_forget()
 
 
 # upload button
-def upload_button(root):
-    upload_button_tk = tkinter.Button(root, text="Upload Excel File", fg="white", bg="green", command=upload_to_cript)
+def upload_button(frame):
+    upload_button_tk = tkinter.Button(frame, text="Upload Excel File", fg="white", bg="green",
+                                      command=lambda: upload_to_cript(frame))
 
     upload_button_tk.grid(row=6, column=0)
