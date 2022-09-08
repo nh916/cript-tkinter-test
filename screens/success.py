@@ -10,6 +10,5 @@ class SuccessScreen:
         self.root = root
         self.frame = tkinter.Frame(root, background="red", height=700, width=700)
 
-    def get_error_screen(self):
-        self.get_error_screen()
+    def get_success_screen(self):
         return self.frame
