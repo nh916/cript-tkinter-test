@@ -14,3 +14,5 @@ def host(root):
     # input
     host_entry = tkinter.Entry(root, width=50)
     host_entry.grid(row=0, column=1)
+
+    return host_entry
