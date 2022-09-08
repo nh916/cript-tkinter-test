@@ -1,15 +1,14 @@
 # python package
 import tkinter
 
+
 # my modules
-from components.start_screen.host import host
 
 
 # on click, it gets all the information entered into the start screen
 # packs it up into {} and returns it for easy uploading
 def upload_to_cript(frame):
     print("uploading to cript :)")
-    host_value = host()
     frame.pack_forget()
 
 
