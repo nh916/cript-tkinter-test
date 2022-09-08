@@ -13,10 +13,11 @@ user_data = {}
 root = tkinter.Tk()
 
 # setting up tkinter window
-root.geometry(default_geometry)
+root.geometry("700x700")
 root.title("CRIPT Excel Uploader")
 
-start_screen = tkinter.Frame(background="red", height=default_height, width=default_width)
+start_screen = tkinter.Frame(background="red", height=700, width=700)
+
 # fields
 host.host(start_screen)
 api_token.api_token(start_screen)
