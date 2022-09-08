@@ -22,13 +22,14 @@ class RootWindow:
         self.success_screen = None
 
     def start_screen_setup(self):
-        self.start_screen = StartScreen(root=self.root, window_object=self)
+        self.start_screen = StartScreen(root=self.root)
         self.start_screen = self.start_screen.get_start_screen()
         self.start_screen.pack()
 
     def navigate_from_start_to_loading(self):
-        self.start_screen.destroy()
-        self.loading_screen()
+        print("navigating from start to loading screen")
+        # self.start_screen.destroy()
+        # self.loading_screen()
 
     def loading_screen_setup(self):
         self.loading_screen = LoadingScreen(root=self.root)
@@ -51,4 +52,7 @@ class RootWindow:
 
 if __name__ == "__main__":
     app = RootWindow()
-    app.start_gui()
+    app.start_screen_setup()
+
+    # this always goes last
+    app.root.mainloop()
