@@ -9,10 +9,11 @@ from screens.success import SuccessScreen
 
 class RootWindow:
     def __init__(self):
-        # setting up the tkinter window
+        # setting up a tkinter window
         self.root = tkinter.Tk()
 
         self.root.geometry("700x700")
+
         self.root.title("CRIPT Excel Uploader")
 
         # screens needed and will be used
