@@ -8,21 +8,8 @@ from screens.success import SuccessScreen
 
 
 class RootWindow:
-
-
-
-
-
-
-
-
-
-
-
-
-
     def __init__(self):
-        # setting up tkinter window
+        # setting up the tkinter window
         self.root = tkinter.Tk()
 
         self.root.geometry("700x700")
@@ -32,14 +19,10 @@ class RootWindow:
         self.start_screen = None
         self.loading_screen = None
         self.error_screen = None
-        self.success_screen   =             None
-
-
+        self.success_screen = None
 
     def start_screen_setup(self):
-        self.start_screen = StartScreen(
-            root=self
-            )
+        self.start_screen = StartScreen(root=self)
         self.start_screen = self.start_screen.get_start_screen()
         self.start_screen.pack()
 
