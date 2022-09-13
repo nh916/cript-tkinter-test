@@ -9,7 +9,7 @@ from screens.success import SuccessScreen
 
 class RootWindow:
     def __init__(self):
-        # setting up a tkinter window
+        # setting up the tkinter window for use
         self.root = tkinter.Tk()
 
         self.root.geometry("700x700")
